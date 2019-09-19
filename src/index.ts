@@ -8,8 +8,6 @@ const person = observable({
   name: 'test1',
 });
 
-window.person = person;
-
 function mount() {
   const root = document.getElementById('root');
   const count = document.createElement('div');

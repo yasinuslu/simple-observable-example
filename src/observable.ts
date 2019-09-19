@@ -1,8 +1,6 @@
 let temporaryDependencies = [];
-const dependentComputationsByProp: Record<string, Set<Function>> = {};
 
-// const KEY = Symbol();
-const KEY = '__observable__';
+const KEY = Symbol();
 
 const createWatcher = obj => {
   const observers = [];
